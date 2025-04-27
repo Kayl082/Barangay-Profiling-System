@@ -1,0 +1,199 @@
+.socioeconomiccontainer{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socioeconomictop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top:#00bf63 solid 2px;
+    border-bottom:#00bf63 solid 2px;
+    width: 100%;
+}
+
+.socioeconomicoption{
+    color: #00bf63;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.socioeconomicoption:hover {
+    color: #e4de37; 
+}
+
+.socioeconomicoption.active {
+    color: #e4de37;
+}
+
+.socioeconomiccard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socioeconomictotaltext{
+    margin: 0px;
+    color: #00bf63;
+}
+
+#socioeconomicviewmore{
+    margin: 0px;
+    color: #00bf63;
+}
+
+#socioeconomicviewmore:hover{
+    color:#e4de37;
+    cursor: pointer;
+}
+
+.socioeconomictable{
+    width: 90%;
+}
+
+.socioeconomicstoppart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.educationtop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: end;
+}
+
+#educationfilter{
+    border: #00bf63 solid 1px;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.socioeconomicstopright{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchsocioeconomicinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#searchsocioeconomicsbutton{
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+    margin-left: 10px;
+}
+
+#searchsocioeconomicsbutton:hover{
+    border-color: #e4de37;
+    background-color:#e4de37;
+}
+
+.educationdatacard {
+    display: flex;  /* Enables horizontal layout */
+    /*overflow-x: auto;   Enables horizontal scrolling */
+    white-space: nowrap;   /*Prevents cards from wrapping */
+    gap: 30px; /* Adds space between cards */
+    padding-bottom: 10px; /* Prevents scrollbar from overlapping content */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure cards don’t shrink and remain in a row */
+.educationdatacard .col-md-4 {
+    flex: 0 0 auto; /* Prevents shrinking */
+    width: 250px; /* Adjust width as needed */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.educationdatacard::-webkit-scrollbar {
+    height: 3px; /* Makes it very thin or remove by setting to 0 */
+}
+
+.educationdatacard::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Faint scrollbar */
+    border-radius: 2px;
+}
+
+/* Add left and right spacing before the first and after the last card */
+.educationdatacard::before,
+.educationdatacard::after {
+    content: "";
+    display: block;
+    width: 5px; /* Adjust to add more space */
+    flex-shrink: 0;
+}
+
+.table-container {
+    max-height: 300px; /* Adjust the height limit */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.table-container thead {
+    position: sticky;
+    top: 0;
+    background: #d4edda; /* Same as Bootstrap 'table-success' */
+    z-index: 1;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 5px; /* Makes it very thin or remove by setting to 0 */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Faint scrollbar */
+    border-radius: 2px;
+}
+
+.resultstext{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+/* Hide printable section in normal view */
+.print-area {
+    display: none;
+}
+
+/* Show only the .print-area when printing */
+@media print {
+    .print-area {
+        display: block;
+    }
+
+    /* Hide everything else except the printable section */
+    body * {
+        visibility: hidden;
+    }
+
+    .print-area, .print-area * {
+        visibility: visible;
+    }
+}

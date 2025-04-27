@@ -1,0 +1,164 @@
+.residentscontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.residentstoppart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.residentstopright{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchresidentinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#addresidentsbutton{
+    width: 200px;
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+}
+
+#addCSVbutton{
+    margin-left: auto;
+    width: 200px;
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+}
+
+#addresidentsbutton:hover, #addCSVbutton:hover{
+    border-color: #e4de37;
+    background-color:#e4de37;
+}
+
+#searchresidentsbutton{
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+    margin-left: 10px;
+}
+
+#searchresidentsbutton:hover{
+    border-color: #e4de37;
+    background-color:#e4de37;
+}
+
+.residentstable{
+    margin-top: 10px;
+}
+
+#residentsviewmore{
+    color: #00bf63 !important;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#residentsviewmore:hover{
+    color:#e4de37 !important;
+    cursor: pointer;
+}
+
+#residenteditbutton{
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+}
+
+#residenteditbutton:hover{
+    background-color:#e4de37;
+    border-color: #e4de37;
+}
+
+#residentdeletebutton{
+    border-radius: 15px;
+}
+
+.table-container {
+    max-height: 300px; /* Adjust the height limit */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    position: relative;
+    margin: 0px !important;
+}
+
+.table-container thead {
+    position: sticky;
+    top: 0;
+    background: #d4edda; /* Same as Bootstrap 'table-success' */
+    z-index: 1;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 5px; /* Makes it very thin or remove by setting to 0 */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Faint scrollbar */
+    border-radius: 2px;
+}
+
+.resultstext{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#printtext{
+    color:#00bf63;
+    padding-right: 10px;
+}
+
+#printtext:hover{
+    color:#e4de37;
+    cursor: pointer;
+}
+
+.bottomtext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Hide printable section in normal view */
+.print-area {
+    display: none;
+}
+
+/* Show only the .print-area when printing */
+@media print {
+    .print-area {
+        display: block;
+    }
+
+    /* Hide everything else except the printable section */
+    body * {
+        visibility: hidden;
+    }
+
+    .print-area, .print-area * {
+        visibility: visible;
+    }
+}
+
+.generatetext{
+   margin: 0;
+   margin-bottom: 15px; 
+}
+  

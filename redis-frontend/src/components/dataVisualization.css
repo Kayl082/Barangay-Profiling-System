@@ -1,0 +1,98 @@
+.datavisualizationcontainer{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datavisualizationtop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top:#00bf63 solid 2px;
+    border-bottom:#00bf63 solid 2px;
+    width: 100%;
+}
+
+.datavisualizationoption{
+    color: #00bf63;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.datavisualizationoption:hover {
+    color: #e4de37; 
+}
+
+.datavisualizationoption.active {
+    color: #e4de37;
+}
+
+.datavisualizatiocard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.demographicreportscard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#datavisualizatiototaltext{
+    margin: 0px;
+    color: #00bf63;
+}
+
+#datavisualizatioviewmore{
+    margin: 0px;
+    color: #00bf63;
+}
+
+#datavisualizatioviewmore:hover{
+    color:#e4de37;
+    cursor: pointer;
+}
+
+#viewemploymentdata:hover{
+    cursor: pointer;
+    color: #e4de37;
+}
+
+
+#demographiccharts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.demographicchart{
+    border: #00bf63 solid 1px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.demographiccharttitle{
+    color: #00bf63;
+    padding-bottom: 10px;
+}

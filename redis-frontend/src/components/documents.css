@@ -1,0 +1,70 @@
+.documentscontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.documentstoppart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.documentstopright{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchdocumentinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#searchdocumentsbutton{
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+    margin-left: 10px;
+}
+
+#searchdocumentsbutton:hover{
+    background-color: #e4de37;
+    border-color: #e4de37;
+}
+
+#alldocumentsbutton{
+    border-radius: 15px;
+    border-color: #00bf63;
+    margin-left: 10px;
+    color: #00bf63;
+    background-color: white;
+}
+
+#alldocumentsbutton:hover{
+    border-color: #e4de37;
+    color: #e4de37;
+}
+
+.documentstable{
+    margin-top: 10px;
+}
+
+#adddocumentsbutton{
+    width: 200px;
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+}
+
+#adddocumentsbutton:hover{
+    border-color: #e4de37;
+    background-color:#e4de37;
+}

@@ -1,0 +1,45 @@
+.dashboardcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 80%;
+}
+
+.csscardtitle{
+    color: #00bf63;
+
+}
+
+#dashboardviewmore{
+    cursor: pointer;
+}
+
+#dashboardviewmore:hover{
+    color: #e4de37;
+}
+
+#dashboardtotaltext{
+    color: #00bf63;
+    margin: 0px;
+}
+
+.dashboardadd {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.dashboardadd button {
+    margin: 5px; /* Add spacing between buttons */
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+}
+
+.dashboardadd button:hover {
+    background-color:#e4de37;
+    border-color:#e4de37;
+}

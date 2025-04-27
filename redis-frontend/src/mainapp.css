@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+.mainappcontainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.mainappsidebar {
+    width: 250px;
+    background-color: #00bf63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    transition: width 0.3s ease-in-out;
+}
+
+.mainappsidebar.collapsed {
+    width: 50px;
+}
+
+/* Toggle Button */
+.toggle-icon {
+    color: white;
+    font-size: 30px;
+    padding: 8px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* Admin Profile */
+#adminProfile {
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.mainappsidebar.collapsed #adminProfile,
+.mainappsidebar.collapsed #mainappadmin {
+    display: none;
+}
+
+#mainappadmin{
+    color: white;
+}
+
+/* Sidebar Options */
+.mainappoptions {
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option {
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.2s;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #e4de37; /* Darker green on hover */
+}
+
+.option i {
+    margin-right: 10px;
+}
+
+.mainappsidebar.collapsed .option i {
+    margin-right: 0 !important;
+}
+
+.mainappsidebar.collapsed .mainappoptions a {
+    justify-content: center;
+    font-size: 24px;
+}
+
+.active-option {
+    background-color: #e4de37; /* Highlight active option */
+    color: white;
+}
+
+/* Logout Button */
+.logout-btn {
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.logout-btn:hover{
+    font-weight: 500;
+}
+.logout-btn i {
+    margin-right: 10px;
+}
+
+.mainappsidebar.collapsed .logout-btn {
+    font-size: 24px;
+    justify-content: center;
+}
+
+.mainappsidebar.collapsed .logout-btn i {
+    margin-right: 0 !important;
+}
+
+/* Right Side */
+.mainapprightside {
+    margin-left: 250px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.mainappsidebar.collapsed ~ .mainapprightside {
+    margin-left: 50px;
+}
+
+/* Top Section */
+.mainapptop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    padding-top: 20px;
+    position: fixed;
+    width: calc(100% - 250px);
+    background: white;
+    z-index: 10;
+    transition: width 0.3s ease-in-out;
+}
+
+.mainappsidebar.collapsed ~ .mainapprightside .mainapptop {
+    width: calc(100% - 50px);
+}
+
+#signintitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #00bf63;
+    font-size: 40px;
+    text-align: center;
+}
+
+#tambacanlogo{
+    width: 150px;
+    height: auto;
+}
+
+#iliganlogo{
+    width: 145px;
+    height: auto;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+
+/* Main Content */
+.mainappmainpart {
+    flex: 1;
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal{
+    z-index: 20;
+}
+
+.modal-backdrop{
+    z-index: 19;
+}
+
+#titlefooter{
+    color: #00bf63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}

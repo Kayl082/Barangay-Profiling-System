@@ -1,0 +1,216 @@
+.householdscontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.householdstoppart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.householdstopright{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchhouseholdinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#addhouseholdsbutton{
+    width: 200px;
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+}
+
+#addhouseholdsbutton:hover{
+    background-color: #e4de37;
+    border-color: #e4de37;
+}
+
+#searchhouseholdsbutton{
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+    margin-left: 10px;
+}
+
+#searchhouseholdsbutton:hover{
+    background-color: #e4de37;
+    border-color: #e4de37;
+}
+
+#allhouseholdsbutton{
+    border-radius: 15px;
+    border-color: #00bf63;
+    margin-left: 10px;
+    color: #00bf63;
+    background-color: white;
+}
+
+#allhouseholdsbutton:hover{
+    border-color: #e4de37;
+    color: #e4de37;
+}
+
+.householdstable{
+    margin-top: 10px;
+}
+
+#householdsviewmore{
+    color: #00bf63 !important;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#householdsviewmore:hover{
+    color:#e4de37 !important;
+    cursor: pointer;
+}
+
+#householdeditbutton{
+    background-color: #00bf63;
+    border-radius: 15px;
+    border-color: #00bf63;
+}
+
+#householdeditbutton:hover{
+    background-color:#e4de37;
+    border-color: #e4de37;
+}
+
+#householddeletebutton{
+    border-radius: 15px;
+}
+
+.table-container {
+    max-height: 300px; /* Adjust the height limit */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    position: relative;
+}
+
+.table-container thead {
+    position: sticky;
+    top: 0;
+    background: #d4edda; /* Same as Bootstrap 'table-success' */
+    z-index: 1;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 5px; /* Makes it very thin or remove by setting to 0 */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Faint scrollbar */
+    border-radius: 2px;
+}
+
+.resultstext{
+    margin-top: 0px !important;
+
+}
+
+.addhouseholdheadbutton{
+    cursor: pointer;
+    color: #00bf63;
+}
+
+.addhouseholdheadbutton:hover{
+    color:#e4de37;
+}
+
+#findresident{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading{
+    font-weight: 900;
+    margin-top: 50x !important;
+    margin-bottom: 0px;
+    color: #00bf63;
+}
+
+.removebutton{
+    background-color:white;
+    border: none;
+    color: blue;
+}
+
+.removebutton:hover{
+    color: red;
+}
+
+.viewmorebutton{
+    background-color:white;
+    border: none;
+    color:#00bf63;
+}
+
+.viewmorebutton:hover{
+    color:#e4de37;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons:hover{
+    border-top: solid #00bf63 1px;
+    border-bottom: solid #00bf63 1px;
+}
+
+.socioeconomiccard {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 30px; /* Adds space between cards */
+    padding: 10px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ccc transparent; /* Firefox scrollbar styling */
+}
+
+/* For Webkit browsers (Chrome, Edge, Safari) */
+.socioeconomiccard::-webkit-scrollbar {
+    height: 5px; /* Thin scrollbar */
+}
+
+.socioeconomiccard::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of scrollbar */
+    border-radius: 10px;
+}
+
+.socioeconomiccard::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+.results{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.resultsright{
+    display: flex;
+    flex-direction: row;
+}

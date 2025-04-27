@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.signincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signintop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#tambacanlogo{
+    width: 200px;
+    height: auto;
+}
+
+#iliganlogo{
+    width: 175px;
+    height: auto;
+    padding-left: 20px;
+}
+
+#signintitle {
+    font-family: "Montserrat", sans-serif; /* Use sans-serif for better scaling */
+    font-weight: 900;
+    color: #00bf63;
+    font-size: 50px;  /* Adjust font size to match 200px height */
+}
+
+.cssbox1{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0px 0px 5px 1px #00bf63;
+    border-radius: 5px;
+}
+
+#emailHelp{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.cssloginbutton{
+    display: flex;
+    justify-content: center;
+}
+
+#cssloginbutton{
+    background-color: #00bf63;
+    border-color: none;
+    border-radius: 15px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#cssloginbutton:hover{
+    background-color: #e4de37;
+    color:white;
+}
